@@ -1,0 +1,114 @@
+header {
+    background-color: #bbbbbb;
+    padding: 20px 0px;
+}
+
+.box {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
+    font-size: 22px;
+}
+
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0px;
+}
+
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.imput-padrao {
+    display: block;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 50%;
+}
+
+.seletor {
+    padding: 30px 0;
+}
+
+.checkbox {
+    margin: 40px 0px;
+}
+
+.enviar {
+    width: 40%;
+    padding: 20px 0px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.enviar:hover {
+    background-color: rgb(230, 130, 9); 
+    transform: scale(1.1);
+    /* transition: 1s background; */
+} 
+
+table{
+    margin: 20px 0 40px;
+}
+
+thead{
+        background-color: #555555;
+        color:#fff;
+}
+
+th{
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 15px 8px;
+}
+
+footer {
+    padding: 40px 0px;
+    text-align: center;
+    background: url(./img/bg.jpg);
+}
+
+.copyright {
+    color: #fff;
+    font-size: 13px;
+}
