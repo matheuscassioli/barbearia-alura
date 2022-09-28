@@ -1,45 +1,17 @@
-body{
-    font-family: 'Montserrat', sans-serif;
+:root{
+    --grayColor: #bbbbbb;
+    --BlackColor: #000;
+    --WhiteColor: #fff;
+    --hoverOrangeColor: #c78c19;
+    --primaryColor: #fefefe;
+    --BgBTN: orange;
+    --bgBTNhover:rgb(230, 130, 9);
+    --beneficiosColor:#888888;
+    --activeColor:#42c719;
+    --produtosHover:#c78c19;
+    --headerColor:#bbbbbb;
 }
-
-header {
-    background-color: #bbbbbb;
-    padding: 20px 0px;
-    width: 100%;
-    
-}
-
-.box {
-    width: 80%;  
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-nav {  
-    align-items: center;
-}
-
-nav li {
-    display: inline-block;
-    margin: 0 0 0 15px;
-}
-
-
-nav a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #000000;
-    font-size: 22px;
-}
-
-nav a:hover {
-    color: #c78c19;
-    text-decoration: underline;
-}
-
+  
 .produtos {
     width: 100%;
     padding: 2.5rem 0px;
@@ -52,18 +24,18 @@ nav a:hover {
     text-align: center;
     vertical-align: top; 
     box-sizing: border-box;
-    border: #000000 solid 3px;
+    border: var(--BlackColor) solid 3px;
     border-radius: 20px;
         display: flex;
     flex-direction: column;
 }
 
 .produtos li:hover {
-    border-color: #c78c19;
+    border-color: var(--produtosHover);
 }
 
 .produtos li:active {
-    border-color: #42c719;
+    border-color: var(--activeColor);
 }
 
 .produtos li:hover h2 {
@@ -86,17 +58,8 @@ nav a:hover {
     margin-top: 10px;
     padding-bottom: 1em;
 }
-
-footer {
-    padding: 40px 0px;
-    text-align: center;
-    background: url(./img/bg.jpg);
-}
-
-.copyright {
-    color: #fff;
-    font-size: 13px;
-}
+ 
+/*------media queries-------*/
 
  @media screen and (max-width:500px) {
  

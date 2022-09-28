@@ -1,10 +1,20 @@
+:root{
+    --grayColor: #bbbbbb;
+    --BlackColor: #000;
+    --WhiteColor: #fff;
+    --hoverOrangeColor: #c78c19;
+    --primaryColor: #fefefe;
+    --BgBTN: orange;
+    --bgBTNhover:rgb(230, 130, 9);
+    --beneficiosColor:#888888;
+}
 body {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
 }
 
 header {
-    background-color: #bbbbbb;
+    background-color: var(--grayColor);
     padding: 20px 0px;
     width: 100%;
     display: flex;
@@ -15,9 +25,11 @@ header {
     padding: 0px;
 }
 
-.box {
-    width: 80%;
+.box { 
+    width: 80%;  
+    margin: 0 auto;
     display: flex;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -37,16 +49,14 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    color: #000000;
+    color: var(--BlackColor);
     font-size: 22px;
 }
 
 nav a:hover {
-    color: #c78c19;
+    color: var(--hoverOrangeColor);
     text-decoration: underline;
 }
-
-
 
 form {
     padding: 2em 3em;
@@ -76,8 +86,8 @@ form legend {
 
 .enviar {
     padding: 18px 13px;
-    background-color: orange;
-    color: white;
+    background-color: var(--BgBTN);
+    color: var(--WhiteColor);
     font-weight: bold;
     font-size: 19px;
     border: none;
@@ -88,7 +98,7 @@ form legend {
 }
 
 .enviar:hover {
-    background-color: rgb(230, 130, 9);
+    background-color: var(--bgBTNhover);
     transform: scale(1.1);
     /* transition: 1s background; */
 }
@@ -98,8 +108,8 @@ table {
 } 
 
 thead {
-    background-color: #555555;
-    color: #fff;
+    background-color: var(--BlackColor);
+    color: var(--WhiteColor);
 }
 
 th {
@@ -108,22 +118,23 @@ th {
 
 td,
 th {
-    border: 1px solid black;
+    border: 1px solid var(--BlackColor);
     padding: 15px 8px;
 }
 
 footer {
     padding: 40px 0px;
     text-align: center;
-    background: url(./img/bg.jpg);
+    background: url(./assets/img/bg.jpg);
 }
 
 .copyright {
-    color: #fff;
+    color: var(--WhiteColor);
     font-size: 13px;
 }
 
 /* css da página inicial */
+
 .banner {
     width: 100%;
 }
@@ -136,7 +147,7 @@ footer {
 }
 
 .principal {
-    background-color: #fefefe;
+    background-color: var(--primaryColor);
     width: 80%;
     margin: 0 auto;
 }
@@ -160,7 +171,7 @@ footer {
 }
 
 .beneficios {
-    background-color: #888888;
+    background-color: var(--beneficiosColor);
     padding: 10px;
 }
 
@@ -199,7 +210,7 @@ footer {
 
 .mapa {
     padding: 3em 0;
-    background: linear-gradient(#fefefe, #888888);
+    background: linear-gradient(var(--primaryColor), var(--beneficiosColor));
 }
 
 .mapa-child {
@@ -216,6 +227,34 @@ footer {
     width: 560px;
     margin: 3em auto;
 }
+
+.coded{
+    padding: 1em;
+    color: var(--WhiteColor);
+}
+.coded a{
+    color: var(--WhiteColor);
+    text-decoration: none;
+}
+.coded a:nth-child(1){
+ font-style: italic;
+}
+
+.coded a:nth-child(2){
+    font-weight: bold;
+}
+
+.coded img{
+    width: 20px;
+    vertical-align: middle;
+}
+
+footer{
+    background-color: var(--BlackColor);
+}
+
+
+/* -- media queries --*/
 
 
 @media screen and (max-width:730px) {
